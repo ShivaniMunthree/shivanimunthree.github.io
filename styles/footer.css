@@ -1,0 +1,73 @@
+/*Footer styles*/
+.footer {
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: "Ubuntu Condensed,sans-serif";
+    /*following is to align text and logo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*default direction is on a single row in flex direction,we want to use a custom value,a column will allow us to stack the items on top of eachother*/
+    flex-direction: column;
+    height: 450px;
+    margin-top: -4px;
+
+}
+
+/*to reduced size of huge logo*/
+.footer>.logo-footer img {
+    width: 180px;
+    height: 100%;
+    /*filter:brightness(50%);*/
+    opacity: 0.5;
+
+}
+
+/*spacing for footer*/
+.footer>.footer-email-hours span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.footer>.footer-email-hours>.hours {
+    font-size: 0.8em;
+    color: #cea135;
+    text-transform: uppercase;
+}
+
+/*spaced home about in footer*/
+.footer>.links-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+}
+
+.footer>.social-media-icons-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    /*to  seperate icons flex box is needed*/
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer>.social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: #cbcbcb;
+    transition: 0.5s;
+    /*to do the hover effectyou need to first put transition here then next below*/
+}
+
+.footer>.social-media-icons-wrapper a:hover {
+    color: #cea135;
+}
+
+
+.footer>.Copyright-wrapper {
+    margin-bottom: 42px;
+    font-size: 0.9em;
+    color: #858585;
+}

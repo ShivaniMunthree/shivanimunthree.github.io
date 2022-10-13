@@ -1,0 +1,63 @@
+/*skewed header stles*/
+/*to be able to stack items ontop of each other you need to use 
+    position absolute to be able to use position absolute you need to
+     first use position relative
+    */
+
+    .skewed-header {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+    }
+    
+    .skewed-header>.header-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        /*this allows image to be sitting flush on all sides*/
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        transform: skewY(-6deg);
+        transform-origin: top left;
+        filter: brightness(50%);
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.12);
+        
+    }
+    
+    .skewed-header>.skewed-header-wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        /*width:100vw allows the background o take up the whole width-background-size*/
+    }
+    
+    .skewed-header>.skewed-header-wrapper>.skewed-header-content {
+        /*the box encapsulating both h1 div and liks dic in skewed header below*/
+        width: 900px;
+        /*he had 1000px but 580 looked better*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    
+    }
+    
+    /*styling header wrapper h1 div*/
+    .skewed-header>.skewed-header-wrapper>.skewed-header-content>.header-wrapper {
+        background-color: #cea135;
+        color: #11122b;
+    
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        /*this alow the corners of the box to be 
+    rounded but only for the bottom right and bottom left*/
+        width: 160px;
+        padding: 5px;
+        text-align: center;
+    }
+    

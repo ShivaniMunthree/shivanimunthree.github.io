@@ -1,0 +1,12 @@
+/*Helpers*/
+
+/*this will allow us to have some margin whereever we want it but not attached to every element*/
+.spacer45 {
+    height: 45px;
+    width: 100%;
+}
+
+.spacer10 {
+    height: 10px;
+    width: 100%;
+}

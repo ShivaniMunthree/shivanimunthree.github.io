@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu+Condensed&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/feae6a316e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/skewed-header.css">
+    <link rel="stylesheet" href="styles/page-container.css">
+    <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+
+
+
+</head>
+<!--get the form to send an email,add a honeypot,remove the captcha,clean up the emal,add a success page to prevent duplicates-->
+
+<body>
+    <!--the more divs you have the easier it is to apply css and flex box-->
+    <div class="skewed-header">
+        <div class="header-bg"
+            style="background-image:url('images/skew\ contact.jpg');">
+        </div>
+
+        <div class="skewed-header-wrapper">
+            <div class="skewed-header-content">
+                <!--code from body start tag to here relates entirely to the header image,css will be applied to these divs for the background header-->
+                <div class="header-wrapper">
+                    <h1> Contact </h1>
+                </div>
+
+                <div class="links-wrapper">
+                    <div class="nav-link">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="services.html">Services</a>
+                    </div>
+                    <div class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="contact-grid-wrapper">
+            <!--start of grid for contact-->
+            <div class="company-metadata-sidebar-wrapper">
+                <!--first column,eveeything in this div will be in the first column-->
+                <div class="logo">
+                    <img src="images/logos/Rabbitwebsites-logos_black.png" alt="logo">
+
+                </div>
+
+
+                <div class="company-details-wrapper">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        45 Zenith Drive<br>Umhlanga Ridge<br>
+                        4319
+
+                    </div>
+                </div>
+                <div class="company-details-wrapper">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <div>
+                        Hours 8am to 5pm Weekdays
+
+                    </div>
+                </div>
+                <div class="company-details-wrapper">
+                    <i class="fa-solid fa-hourglass"></i>
+
+                    <div>
+                        1 day response
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form">
+                <!--html form tag normally used however need ruby on rails to connect to backend server to send email-->
+                <!--2nd columneveything in this div will be in the second column-->
+                <form action="https://formsubmit.co/shivani.munthree@gmail.com" method="POST">
+
+                    <div class="form-group">
+                        <input type="text" id="full name" name="Name" placeholder="Your name">
+                        <!--the for attribute creates a connrction with the id-->
+                        <label for="full name">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="Email" placeholder="Your Email">
+                        <label for="email">Your email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" id="message"name="Message" placeholder="Message"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+
+
+
+                    <div class="centered-btn-wrapper">
+                        <button type="submit" class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--
+    <form aciton="/registration" method="POST">    
+
+        <label for="username">Username:</label><br>
+           <input type="text" name="username"><br>
+        <label for="password">Password:</label><br>
+          <input type="password" /><br>
+
+             <input type="submit" />  button
+
+
+
+
+
+    </form>
+-->
+
+
+
+
+
+
+    <div class="spacer45"></div>
+
+
+    <div class="footer">
+
+        <div class="logo-footer">
+            <img src="images/logos/Rabbitwebsites-logos_white.png" alt="Logo">
+
+        </div>
+        <div class="footer-email-hours">
+            <span class="email">
+                websitesolution@gmail.com
+            </span>
+            <span class="hours">
+                10 am to 4 pm Weekdays
+            </span>
+            <!--span is like a div but it doesnt give a line break-->
+        </div>
+
+        <div class="links-wrapper">
+            <div class="nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link">
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-link">
+                <a href="services.html">Services</a>
+            </div>
+            <div class="nav-link">
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </div>
+        <div class="social-media-icons-wrapper">
+            <!--# is used in place of link to instagram -->
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-square-twitter"></i>
+            </a>
+
+        </div>
+        <div class="Copyright-wrapper">
+            &copy; 2022 Shivani Munthree &#124; All rights reserved
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

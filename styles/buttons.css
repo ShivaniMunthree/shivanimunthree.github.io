@@ -1,0 +1,25 @@
+ 
+.btn{ /*there was no need to say .form>.centered-btn-wrapper btn{} because btn is in a class of its own and can can be styled directly even though its in 2 divs!*/
+background-color:#cea135;
+color:#11122b;
+font-size:1.25em;
+padding:10px 25px; /*this will be 10px on the top and bottom and 25 px on the left and right*/
+border:1px solid #cea135;
+border-radius:2px;
+outline:none;
+transition:0.3s;
+}
+
+.btn:active {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    
+}
+
+
+
+.centered-btn-wrapper { /*to move the entire button we need to move the whole wrapper not just the class*/
+display:flex;
+justify-content:center;
+
+
+}
