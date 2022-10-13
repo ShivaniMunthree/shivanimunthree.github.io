@@ -36,8 +36,7 @@
 <body>
     <!--the more divs you have the easier it is to apply css and flex box-->
     <div class="skewed-header">
-        <div class="header-bg"
-            style="background-image:url('images/skew\ contact.jpg');">
+        <div class="header-bg" style="background-image:url('images/skew\ contact.jpg');">
         </div>
 
         <div class="skewed-header-wrapper">
@@ -109,12 +108,23 @@
             <div class="form">
                 <!--html form tag normally used however need ruby on rails to connect to backend server to send email-->
                 <!--2nd columneveything in this div will be in the second column-->
+                <!--the for attribute creates a connection with the id-->
                 <form action="https://formsubmit.co/2a8db0825ebbf18355005d854800b291" method="POST">
+                    <!--Honeypot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Diable captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+
+
+
 
                     <div class="form-group">
                         <input type="text" id="full name" name="Name" placeholder="Your name">
-                        <!--the for attribute creates a connrction with the id-->
                         <label for="full name">Your Name</label>
+                        <!--the for attribute creates a connrction with the id-->
+
+                        <br>
                     </div>
 
                     <div class="form-group">
@@ -123,7 +133,7 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea name="message" id="message"name="Message" placeholder="Message"></textarea>
+                        <textarea name="message" id="message" name="Message" placeholder="Message"></textarea>
                         <label for="message">Message</label>
                     </div>
 
