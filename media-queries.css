@@ -184,12 +184,17 @@
     }
 
     .hero-section {
-        padding: 50px 10px;
+        
+        background-image: url(../images/laptop\ image.jpg);
+        background-attachment: fixed;
+        background-position-x: right;
+        background-position-y: center;
 
+        background-repeat: no-repeat;
+        background-size: 50%;
+    
 
     }
-
-
 
     .features-section {
         height: 100%;
