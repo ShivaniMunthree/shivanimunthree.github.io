@@ -1,0 +1,140 @@
+@media (max-width:615px) {
+
+    /*to allow the media to dynamically change depending on the device*/
+    .navigation-wrapper {
+        flex-direction: column;
+        height: 100%
+    }
+
+    .navigation-wrapper>.left-column {
+        order: 2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+    }
+
+    .navigation-wrapper>.centre-column {
+        order: 1;
+        width: 100%;
+
+    }
+
+    .navigation-wrapper>.right-column {
+        order: 3;
+        margin-top: 15px;
+
+
+    }
+
+    .links-wrapper {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+
+
+
+    }
+
+    .links-wrapper>.nav-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .hero-section {
+        padding: 50px 10px;
+
+
+    }
+
+
+
+    .features-section {
+        height: 100%;
+
+    }
+
+    .features-section>.columns-wrapper {
+        /*This allows the 3 items tobe stacked on each other,note it is the wrapper not the indiidual class*/
+        width: 100%;
+        flex-direction: column;
+
+
+    }
+
+    .footer {
+        height: 100%;
+
+    }
+
+    .skewed-header>.skewed-header-wrapper>.skewed-header-content {
+        flex-direction: column;
+
+    }
+
+    .skewed-header>.header-bg {
+        /*this allowed the skewed header to be longer so that nav links could fit*/
+        background-size: 600px;
+
+    }
+
+    .page-container {
+        padding-left: 21px;
+        padding-right: 21px;
+
+
+    }
+
+    .page-container>.content-wrapper>#workplace {
+        margin: 0px 0px 25px 0px;
+        width: 100%;
+
+    }
+
+    .squares-wrapper>.squares>.square {
+        /*!important is used to override css styles,remeber the most specific links works so if you show the path its the same as using !importatant*/
+        grid-template-columns: 1fr;
+        padding-left: 21px;
+        padding-right: 21px;
+
+
+    }
+
+    .squares-wrapper>.squares>.square>.square-text-wrapper {
+        order: 1;
+    }
+
+    .squares-wrapper>.squares>.square>.img-wrapper {
+        order: 2;
+
+    }
+
+    .contact-grid-wrapper {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+
+
+
+    }
+
+    /*update the form elements*/
+
+    .form input {
+        padding: 1.5em 0rem;
+
+
+
+    }
+
+    .form textarea {
+        padding: 1.5em 0rem;
+
+
+
+    }
+
+
+
+}
