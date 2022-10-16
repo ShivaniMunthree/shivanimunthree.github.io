@@ -13,6 +13,10 @@
 
     }
 
+    .navigation-wrapper>.left-column>.icon {
+        font-size: small;
+    }
+
     .navigation-wrapper>.centre-column {
         order: 1;
         width: 100%;
@@ -24,6 +28,10 @@
         margin-top: 15px;
 
 
+    }
+
+    .navigation-wrapper>.right-column>.icon {
+        font-size: x-small;
     }
 
     .links-wrapper {
@@ -42,7 +50,10 @@
         width: 100%;
     }
 
-
+    .hero-section {
+        background-attachment: scroll !important; /*Parallex effect on my iphone wasn't showing however on ndriod phone it was decided to use a static image when its on a smaller screen*/
+        padding: 0px 0px 0px 0px !important;
+    }
 
 
     .features-section {
@@ -132,4 +143,4 @@
 
 
 
-} 
+}
